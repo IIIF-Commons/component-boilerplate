@@ -41,10 +41,10 @@ namespace MyComponents.ExampleComponent {
     }
 }
 
-(function(w) {
-    if (!w.MyComponents){
-        w.MyComponents = MyComponents;
+(function(g) {
+    if (!g.MyComponents){
+        g.MyComponents = MyComponents;
     } else {
-        w.MyComponents.ExampleComponent = MyComponents.ExampleComponent;
+        g.MyComponents.ExampleComponent = MyComponents.ExampleComponent;
     }
-})(window);
+})(global);
