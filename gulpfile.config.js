@@ -13,7 +13,8 @@ var GulpConfig = (function () {
             examples: [],
             // ts definitions to copy to the typings dir
             typings: [
-                'node_modules/base-component/dist/base-component.d.ts'
+                'node_modules/base-component/dist/base-component.d.ts',
+                'node_modules/base-component/typings/corejs.d.ts'
             ]
         };
         this.fileNames = {
