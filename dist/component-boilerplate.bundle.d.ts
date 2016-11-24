@@ -8390,7 +8390,6 @@ declare namespace _Components {
     }
 }
 
-
 declare namespace MyComponents {
     class ExampleComponent extends _Components.BaseComponent {
         constructor(options: IExampleComponentOptions);

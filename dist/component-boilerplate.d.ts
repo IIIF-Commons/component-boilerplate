@@ -1,4 +1,5 @@
-// component-boilerplate v1.0.5 https://github.com/viewdir/component-boilerplate#readme
+// component-boilerplate v1.0.6 https://github.com/viewdir/component-boilerplate#readme
+
 declare namespace MyComponents {
     class ExampleComponent extends _Components.BaseComponent {
         constructor(options: IExampleComponentOptions);
