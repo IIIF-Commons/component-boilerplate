@@ -19,14 +19,17 @@
         $(function() {
 
             component = new MyComponents.ExampleComponent({
-                element: "#component"
+                target: document.querySelector('#component'),
+                data: {
+                    message: "This is a message from example component"
+                }
             });
             
-            component.on('test', function(args) {
+            component.on('message', function(args) {
                 alert(args);
             });
             
-            component.test();
+            component.message();
             
         });
     </script>

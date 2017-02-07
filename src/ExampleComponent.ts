@@ -8,8 +8,8 @@ namespace MyComponents {
             this._resize();
         }
 
-        public test(): void {
-            this._emit(ExampleComponent.Events.TEST, [1, 2, 'three']);
+        public message(): void {
+            this.fire(ExampleComponent.Events.MESSAGE, this.options.data.message);
         }
 
         protected _init(): boolean {
@@ -24,9 +24,8 @@ namespace MyComponents {
             return success;
         }
         
-        protected _getDefaultOptions(): IExampleComponentOptions {
-            return <IExampleComponentOptions>{
-            }
+        public data(): Object {
+            return {};
         }
         
         protected _resize(): void {
@@ -37,11 +36,11 @@ namespace MyComponents {
 
 namespace MyComponents.ExampleComponent {
     export class Events {
-        static TEST: string = 'test';
+        static MESSAGE: string = 'message';
     }
 }
 
-(function(g) {
+(function(g: any) {
     if (!g.MyComponents){
         g.MyComponents = MyComponents;
     } else {

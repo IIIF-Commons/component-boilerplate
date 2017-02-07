@@ -3,15 +3,15 @@
 declare namespace MyComponents {
     class ExampleComponent extends _Components.BaseComponent {
         constructor(options: IExampleComponentOptions);
-        test(): void;
+        message(): void;
         protected _init(): boolean;
-        protected _getDefaultOptions(): IExampleComponentOptions;
+        data(): Object;
         protected _resize(): void;
     }
 }
 declare namespace MyComponents.ExampleComponent {
     class Events {
-        static TEST: string;
+        static MESSAGE: string;
     }
 }
 

@@ -9,9 +9,5 @@ tasks.init({
         'node_modules/base-component/dist/base-component.bundle.js'
     ],
     // libs that MAY be included in a consuming app but are used here for example purposes
-    examples: [],
-    // ts definitions to copy to the 'typings' dir
-    typings: [
-        'node_modules/base-component/dist/base-component.bundle.d.ts'
-    ]
+    examples: []
 });
