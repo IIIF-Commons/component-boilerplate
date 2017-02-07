@@ -2,7 +2,7 @@
 
 declare namespace MyComponents {
     class ExampleComponent extends _Components.BaseComponent {
-        constructor(options: IExampleComponentOptions);
+        constructor(options: _Components.IBaseComponentOptions);
         message(): void;
         protected _init(): boolean;
         data(): Object;
@@ -16,6 +16,6 @@ declare namespace MyComponents.ExampleComponent {
 }
 
 declare namespace MyComponents {
-    interface IExampleComponentOptions extends _Components.IBaseComponentOptions {
+    interface IExampleComponentData {
     }
 }

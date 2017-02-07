@@ -1,7 +1,7 @@
 namespace MyComponents {
     export class ExampleComponent extends _Components.BaseComponent {
 
-        constructor(options: IExampleComponentOptions) {
+        constructor(options: _Components.IBaseComponentOptions) {
             super(options);
             
             this._init();
