@@ -1,4 +1,5 @@
 // component-boilerplate v1.0.7 https://github.com/viewdir/component-boilerplate#readme
+/// <reference path="../node_modules/typescript/lib/lib.es6.d.ts" />
 
 declare namespace MyComponents {
     class ExampleComponent extends _Components.BaseComponent {

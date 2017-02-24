@@ -6,7 +6,7 @@ tasks.init({
     metadata: metadata,
     // libs that MUST be included in a consuming app for this component to work
     libs: [
-        'node_modules/base-component/dist/base-component.bundle.js'
+        'node_modules/base-component/dist/base-component.js'
     ],
     // libs that MAY be included in a consuming app but are used here for example purposes
     examples: []
