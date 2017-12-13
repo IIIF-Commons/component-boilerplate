@@ -1,4 +1,4 @@
-namespace MyComponents{
+namespace IIIFComponents{
     export interface IExampleComponentData {
 
     }

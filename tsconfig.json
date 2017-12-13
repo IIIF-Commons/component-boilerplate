@@ -3,12 +3,17 @@
         "declaration": true,
         "noImplicitAny": true,
         "noImplicitReturns": true,
-        "noImplicitThis": true,
+        "noImplicitThis": false,
         "module": "es6",
         "moduleResolution": "node",
         "noUnusedLocals": true,
         "noUnusedParameters": false,
-        "strictNullChecks": true
+        "strictNullChecks": true,
+        "lib": ["es6", "dom"],
+        "types": [
+            "base-component",
+            "jquery"
+        ]
     },
     "files": [
         "src/Definitions.ts"

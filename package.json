@@ -3,26 +3,24 @@
   "version": "1.0.7",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "postinstall": "typings install"
-  },
+  "types": "./dist/component-boilerplate.d.ts",
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/viewdir/component-boilerplate.git"
+    "url": "git+https://github.com/iiif-commons/component-boilerplate.git"
   },
-  "author": "Edward Silverton <e.silverton@gmail.com> (http://edsilv.com)",
+  "author": "@edsilv",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/viewdir/component-boilerplate/issues"
+    "url": "https://github.com/iiif-commons/component-boilerplate/issues"
   },
-  "homepage": "https://github.com/viewdir/component-boilerplate#readme",
+  "homepage": "https://github.com/iiif-commons/component-boilerplate#readme",
   "devDependencies": {
-    "base-component": "viewdir/base-component#v1.0.9",
+    "base-component": "iiif-commons/base-component#v1.1.2",
     "gulp": "^3.9.1",
-    "gulp-tasks": "viewdir/gulp-tasks#v1.0.5",
-    "typings": "^2.1.0"
+    "gulp-tasks": "iiif-commons/gulp-tasks#v1.0.7"
   },
   "dependencies": {
-    
+    "@types/jquery": "^3.2.16"
   }
 }

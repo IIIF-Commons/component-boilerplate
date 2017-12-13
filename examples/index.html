@@ -18,15 +18,15 @@
         
         $(function() {
 
-            component = new MyComponents.ExampleComponent({
+            component = new IIIFComponents.ExampleComponent({
                 target: document.querySelector('#component'),
                 data: {
-                    message: "This is a message from example component"
+                    salutation: "Everyone"
                 }
             });
             
-            component.on('message', function(args) {
-                alert(args);
+            component.on('message', function(message) {
+                alert(message);
             });
             
             component.message();

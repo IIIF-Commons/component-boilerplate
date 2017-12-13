@@ -1,10 +1,6 @@
-#component-boilerplate
+# component-boilerplate
 
-http://viewdir.github.io/component-boilerplate/examples/
-
-**Ensure you have the [typings](https://github.com/typings/typings) CLI installed**
-
-    npm install typings --global
+http://iiif-commons.github.io/component-boilerplate/examples/
 
 **Install node modules**
 

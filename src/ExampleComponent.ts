@@ -1,4 +1,4 @@
-namespace MyComponents {
+namespace IIIFComponents {
     export class ExampleComponent extends _Components.BaseComponent {
 
         constructor(options: _Components.IBaseComponentOptions) {
@@ -9,7 +9,7 @@ namespace MyComponents {
         }
 
         public message(): void {
-            this.fire(ExampleComponent.Events.MESSAGE, this.options.data.message);
+            this.fire(ExampleComponent.Events.MESSAGE, this._getMessage());
         }
 
         protected _init(): boolean {
@@ -19,13 +19,20 @@ namespace MyComponents {
                 console.error("Component failed to initialise");
             }
             
-            this._$element.append("I am an example component");
+            this._$element.append(this._getMessage());
 
             return success;
         }
+
+        private _getMessage(): string {
+            return `${this.options.data.greeting} ${this.options.data.salutation}`;
+        }
         
         public data(): Object {
-            return {};
+            return {
+                greeting: "Hello",
+                salutation: "World"
+            };
         }
         
         protected _resize(): void {
@@ -34,16 +41,16 @@ namespace MyComponents {
     }
 }
 
-namespace MyComponents.ExampleComponent {
+namespace IIIFComponents.ExampleComponent {
     export class Events {
         static MESSAGE: string = 'message';
     }
 }
 
 (function(g: any) {
-    if (!g.MyComponents){
-        g.MyComponents = MyComponents;
+    if (!g.IIIFComponents){
+        g.IIIFComponents = IIIFComponents;
     } else {
-        g.MyComponents.ExampleComponent = MyComponents.ExampleComponent;
+        g.IIIFComponents.ExampleComponent = IIIFComponents.ExampleComponent;
     }
 })(global);
